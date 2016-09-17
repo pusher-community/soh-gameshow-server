@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -26,6 +28,14 @@ app.post('/pusher/auth', (req, res) => {
   } else {
     res.sendStatus(401)
   }
+})
+
+
+app.get('/press/:id', (req, res) => {
+  pusher.trigger('gameshow', 'button', {
+    id: req.params.id
+  })
+  res.send("ok")
 })
 
 app.get('/', (req, res) => res.send("HELLO"))
