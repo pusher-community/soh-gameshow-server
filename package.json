@@ -1,0 +1,25 @@
+{
+  "name": "soh-gameshow-server",
+  "version": "1.0.0",
+  "description": "Quick gameshow server with auth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benfoxall/soh-gameshow-server.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benfoxall/soh-gameshow-server/issues"
+  },
+  "homepage": "https://github.com/benfoxall/soh-gameshow-server#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "pusher": "^1.5.0"
+  }
+}
