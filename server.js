@@ -35,7 +35,7 @@ app.get('/press/:id', (req, res) => {
   pusher.trigger('gameshow', 'button', {
     id: req.params.id
   })
-  res.send("ok")
+  res.send("done")
 })
 
 app.get('/', (req, res) => res.send("HELLO"))
